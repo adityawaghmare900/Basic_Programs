@@ -9,14 +9,19 @@ namespace Basic_Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the N number: ");
-            int N=Convert.ToInt32 (Console.ReadLine());
-            int fact = 1;
-            for (int i = 1; i <=N; i++)
-            {
-                fact=fact*i;
-                }
-            Console.WriteLine("Factorial of " + N + " is "+fact);
-            }
+            Console.WriteLine("Enter the number ");
+            int divident = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the number for divisor");
+            int divisor = Convert.ToInt32(Console.ReadLine());
+            int Quotient = 0;
+            int Reminder = 0;
+
+            Quotient = divident / divisor;
+            Reminder = divident % divisor;
+
+            Console.WriteLine("Quotient is " + Quotient);
+            Console.WriteLine("Reminder is " + Reminder);
         }
     }
+}

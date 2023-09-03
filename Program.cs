@@ -10,15 +10,15 @@ namespace Basic_Program
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the first number ");
-            int Num1 = Convert.ToInt32(Console.ReadLine());
+            String Alpabet = Console.ReadLine();
 
-            if (Num1 % 2 == 0)
+            if(Alpabet =="a"|| Alpabet=="e"|| Alpabet=="i"|| Alpabet=="o"|| Alpabet=="u") 
             {
-                Console.WriteLine("Given number is Even");
+                Console.WriteLine("Given Alphabet is vowel");
             }
             else
             {
-                Console.WriteLine("Given number is Odd");
+                Console.WriteLine("Given Alphabet is Consonant");
             }
         }
     }

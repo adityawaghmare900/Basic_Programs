@@ -11,18 +11,12 @@ namespace Basic_Program
         {
             Console.WriteLine("Enter the N number: ");
             int N=Convert.ToInt32 (Console.ReadLine());
-
-            if (0 <= N && N < 31)
+            int fact = 1;
+            for (int i = 1; i <=N; i++)
             {
-                for (int i = 0; i < N; i++)
-                {
-                    Console.WriteLine(Math.Pow(2, i));
+                fact=fact*i;
                 }
-            }
-            else
-            {
-                Console.WriteLine("Please Enter Power from 0 to 30");
+            Console.WriteLine("Factorial of " + N + " is "+fact);
             }
         }
     }
-}

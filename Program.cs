@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
+using System.Numerics;
 
 namespace Basic_Program
 {
@@ -7,17 +9,15 @@ namespace Basic_Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the year: ");
-            int year = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the N number: ");
+            int N=Convert.ToInt16 (Console.ReadLine());
+            float Harmonic = 0.0f;
 
-            if (year % 100 == 0 && year % 400 == 0 || year % 100 != 0 && year % 4 == 0)
-            {
-                Console.WriteLine(year + " Is leap year");
+            for(int i=1;i<=N; i++) {
+                Harmonic += (float)1 / i ;
+                Console.Write(Harmonic+" , ");
             }
-            else
-            {
-                Console.WriteLine(year + " Is not leap year");
-            }
+            
         }
     }
 }

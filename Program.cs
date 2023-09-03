@@ -9,19 +9,17 @@ namespace Basic_Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the number ");
-            int divident = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the first number ");
+            int Num1= Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the number for divisor");
-            int divisor = Convert.ToInt32(Console.ReadLine());
-            int Quotient = 0;
-            int Reminder = 0;
+            Console.WriteLine("Enter the second number");
+            int Num2 = Convert.ToInt32(Console.ReadLine());
 
-            Quotient = divident / divisor;
-            Reminder = divident % divisor;
-
-            Console.WriteLine("Quotient is " + Quotient);
-            Console.WriteLine("Reminder is " + Reminder);
+            Num1 = Num1 + Num2;
+            Num2 = Num1 - Num2;
+            Num1 = Num1 - Num2;
+            Console.WriteLine("first number after swap " + Num1);
+            Console.WriteLine("second number after swap "+Num2);
         }
     }
 }

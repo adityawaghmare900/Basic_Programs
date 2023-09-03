@@ -1,20 +1,22 @@
-﻿namespace Basic_Program
+﻿using System.ComponentModel;
+using System.Globalization;
+
+namespace Basic_Program
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Random random = new Random();
-           int HeadOrTails=random.Next(0, 2);
-            
-            if (HeadOrTails < 0.5)
+            Console.Write("Enter the year: ");
+            int year = Convert.ToInt32(Console.ReadLine());
+
+            if (year % 100 == 0 && year % 400 == 0 || year % 100 != 0 && year % 4 == 0)
             {
-                Console.WriteLine("Tails");
+                Console.WriteLine(year + " Is leap year");
             }
             else
             {
-                Console.WriteLine("Head");
-
+                Console.WriteLine(year + " Is not leap year");
             }
         }
     }

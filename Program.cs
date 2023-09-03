@@ -10,14 +10,19 @@ namespace Basic_Program
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the N number: ");
-            int N=Convert.ToInt16 (Console.ReadLine());
-            float Harmonic = 0.0f;
+            int N=Convert.ToInt32 (Console.ReadLine());
 
-            for(int i=1;i<=N; i++) {
-                Harmonic += (float)1 / i ;
-                Console.Write(Harmonic+" , ");
+            if (0 <= N && N < 31)
+            {
+                for (int i = 0; i < N; i++)
+                {
+                    Console.WriteLine(Math.Pow(2, i));
+                }
             }
-            
+            else
+            {
+                Console.WriteLine("Please Enter Power from 0 to 30");
+            }
         }
     }
 }

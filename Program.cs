@@ -10,15 +10,25 @@ namespace Basic_Program
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the first number ");
-            String Alpabet = Console.ReadLine();
+            int a =Convert.ToInt16(Console.ReadLine());
 
-            if(Alpabet =="a"|| Alpabet=="e"|| Alpabet=="i"|| Alpabet=="o"|| Alpabet=="u") 
+            Console.WriteLine("Enter the second number ");
+            int b = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("Enter the third number ");
+            int c = Convert.ToInt16(Console.ReadLine());
+
+            if(a>b && a>c)
             {
-                Console.WriteLine("Given Alphabet is vowel");
+                Console.WriteLine("Fisrt number is greter");
+            }
+            else if(b>a && b>c)
+            {
+                Console.WriteLine("Second number is greter");
             }
             else
             {
-                Console.WriteLine("Given Alphabet is Consonant");
+                Console.WriteLine("Third number is greter");
             }
         }
     }

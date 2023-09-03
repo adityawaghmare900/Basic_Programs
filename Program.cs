@@ -10,16 +10,16 @@ namespace Basic_Program
         static void Main(string[] args)
         {
             Console.WriteLine("Enter the first number ");
-            int Num1= Convert.ToInt32(Console.ReadLine());
+            int Num1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the second number");
-            int Num2 = Convert.ToInt32(Console.ReadLine());
-
-            Num1 = Num1 + Num2;
-            Num2 = Num1 - Num2;
-            Num1 = Num1 - Num2;
-            Console.WriteLine("first number after swap " + Num1);
-            Console.WriteLine("second number after swap "+Num2);
+            if (Num1 % 2 == 0)
+            {
+                Console.WriteLine("Given number is Even");
+            }
+            else
+            {
+                Console.WriteLine("Given number is Odd");
+            }
         }
     }
 }
